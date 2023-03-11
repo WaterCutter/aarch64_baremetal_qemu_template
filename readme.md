@@ -50,7 +50,7 @@ static const MemMapEntry base_memmap[] = {
     [VIRT_MEM] =                { GiB, LEGACY_RAMLIMIT_BYTES },
 };
 ```
-And refering tp https://www.qemu.org/docs/master/system/arm/virt.html,
+And refering to https://www.qemu.org/docs/master/system/arm/virt.html,
 - Flash memory starts at address 0x0000_0000
 - RAM starts at 0x4000_0000
 ### GDB
