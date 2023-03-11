@@ -79,5 +79,5 @@ sudo apt-get install bc bison build-essential coccinelle \
   python3-sphinx-rtd-theme python3-subunit python3-testtools \
   python3-virtualenv swig uuid-dev
 sudo apt-get install qemu
-sudo apt-get install 
+sudo apt-get install gdb-multiarch
 ```
