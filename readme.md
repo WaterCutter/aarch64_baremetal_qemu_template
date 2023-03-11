@@ -1,4 +1,13 @@
+## Overview
+aarch64 baremetal qemu(virt) simulation enviroment. 
 
+## Directory List
+| DIR | DESC |
+|---|---|
+| ./pico_demo | simplest demo for you to test, which contains one .s and one .c file , with straightforward Makefile |
+| ./formal_env | under development |
+
+## Usage
 Refering to ./Makefile please.
 ## Main Tools' version
 ### GCC  
