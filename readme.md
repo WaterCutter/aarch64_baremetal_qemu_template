@@ -1,16 +1,17 @@
 
 Refering to ./Makefile please.
-## GCC  
+## Main Tools' version
+### GCC  
 aarch64-linux-gnu-gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
 Copyright (C) 2021 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-## QEMU 
+### QEMU 
 QEMU emulator version 6.2.0 (Debian 1:6.2+dfsg-2ubuntu6.6)
 Copyright (c) 2003-2021 Fabrice Bellard and the QEMU Project developers
 
-### virt platform memory map
+#### virt platform memory map
 *qemu/hw/arm/virt.c*
 ```c
 static const MemMapEntry base_memmap[] = {
@@ -52,9 +53,31 @@ static const MemMapEntry base_memmap[] = {
 And refering tp https://www.qemu.org/docs/master/system/arm/virt.html,
 - Flash memory starts at address 0x0000_0000
 - RAM starts at 0x4000_0000
-## GDB
+### GDB
 GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
 Copyright (C) 2022 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
+
+## ENVIROMENT SETUP
+### Operating System
+Linux wcstation 5.19.0-35-generic #36~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Feb 17 15:17:25 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+
+
+### Softwares Installing
+
+```bash
+sudo apt-get install gcc gcc-aarch64-linux-gnu
+sudo apt-get install bc bison build-essential coccinelle \
+  device-tree-compiler dfu-util efitools flex gdisk graphviz imagemagick \
+  liblz4-tool libgnutls28-dev libguestfs-tools libncurses-dev \
+  libpython3-dev libsdl2-dev libssl-dev lz4 lzma lzma-alone openssl \
+  pkg-config python3 python3-asteval python3-coverage python3-filelock \
+  python3-pkg-resources python3-pycryptodome python3-pyelftools \
+  python3-pytest python3-pytest-xdist python3-sphinxcontrib.apidoc \
+  python3-sphinx-rtd-theme python3-subunit python3-testtools \
+  python3-virtualenv swig uuid-dev
+sudo apt-get install qemu
+sudo apt-get install 
+```
